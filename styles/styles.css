@@ -7,8 +7,10 @@
 }
 
 :root {
-  --bg-page: #541A3E;
+  --bg-page: #19A1AE;
   --bg-card: #FAFAFA;
+  --text-primary: #2E3349;
+  --text-secondary: #6B7082;
 }
 
 body {
@@ -17,12 +19,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--text-primary);
 }
 
 .bg-card-image {
   height: 8rem;
   width: 21.875rem;
-  background-image: url('../assets/bg-profile.jpg');
+  background-image: url('../assets/bg-profile.SVG');
   border-radius: 0.9375rem 0.9375rem 0 0;
 }
 
@@ -46,4 +49,31 @@ hr {
   height: 7.5rem;
   border-radius: 50%;
   margin-top: -3.75rem;
+  border: 0.25rem solid var(--bg-card);
+}
+
+.info > h1 {
+  margin: 1rem 0;
+}
+
+.info > h1 > span {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.info > p {
+  margin-bottom: 1rem;
+}
+
+.social-container {
+  display: flex;
+  width: 100%;
+  padding: 1rem 0;
+  justify-content: space-around;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
